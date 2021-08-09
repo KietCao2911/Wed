@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pexels</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+</head>
+<body>
+
+<div class="header">
+	<div class="nav">
+		<div class="logo">
+			<div class="logo__icon"><ion-icon name="logo-tiktok"></ion-icon></div>
+			<label for="" class="logo__name">Pexels</label>
+		</div>
+		<div class="nav__search">
+			<input  type="text" name="" placeholder="Search for free photos and videos">
+			<div class="icon_search"><ion-icon name="search-outline"></ion-icon></div>
+		</div>
+		<ul class="menu">
+			<li class="item">Explore</li>
+			<li class="item">License</li>
+			<li class="item">Upload</li>
+			<li class="item droplist">...</li>
+			<li class="item button"><button>Join</button></li>
+		</ul>
+		
+	</div>
+	<!-- content -->
+	<div class="header__content">
+		<div class="title">The best free stock photos & videos shared by talented creators.</div>
+		<div class="search">
+			<input type="text" name="" placeholder="Search for free photos and videos">
+			<div class="icon_search"><ion-icon name="search-outline"></ion-icon></div>
+		</div>
+		<div class="suggested"><span>Suggested</span>
+			<a href="#" class="suggested__item">profile business</a>
+			<a href="#" class="suggested__item">boy</a>
+			<a href="#" class="suggested__item">girl</a>
+			<a href="#" class="suggested__item">smile</a>
+		</div>
+	</div>
+</div>
+
+<div class="body">
+	<div class="body__nav">
+		<ul class="body__menu">
+			<li class="body__menu__item">Home</li>
+			<li class="body__menu__item">Discover</li>
+			<li class="body__menu__item">Videos</li>
+			<li class="body__menu__item">Leaderboard</li>
+			<li class="body__menu__item">Challenges</li>
+		</ul>
+	</div>
+	<div class="contains">
+		<div class="filter">
+			<label for="" class="filter_name">Free Stock Photos</label>
+			<div class="hover__droplist">
+				<div class="droplist__box">
+					<label for="" class="droplist__box__name">Trending</label>
+					<ion-icon name="caret-down-outline"></ion-icon>
+				</div>
+				<ul class="droplist__menu">
+					<li class="droplist__menu__item">Trending
+					</li>
+					<li class="droplist__menu__item">New
+					</li>
+				</ul>
+			</div>
+		</div>
+	<div class="body__contents">
+		<div class="content"><img src="https://images.pexels.com/photos/8567265/pexels-photo-8567265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+		<div class="content"><img src="https://images.pexels.com/photos/8567265/pexels-photo-8567265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+		<div class="content"><img src="https://images.pexels.com/photos/8567265/pexels-photo-8567265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+		<div class="content"><img src="https://images.pexels.com/photos/8567265/pexels-photo-8567265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+		<div class="content"><img src="https://images.pexels.com/photos/8567265/pexels-photo-8567265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+		<div class="content"><img src="https://images.pexels.com/photos/8567265/pexels-photo-8567265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+		<div class="content"><img src="https://images.pexels.com/photos/8567265/pexels-photo-8567265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+		<div class="content"><img src="https://images.pexels.com/photos/8567265/pexels-photo-8567265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+		<div class="content"><img src="https://images.pexels.com/photos/8567265/pexels-photo-8567265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""></div>
+	</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	var getBody=document.querySelector(".body")
+	var getNav=document.querySelector(".nav")
+	window.onscroll=function () {
+		getInput=document.querySelector(".nav__search ")
+		console.log(window.scrollY)
+		// console.log(getInput)
+		if(window.scrollY>500){
+					getInput.classList.add("sroll__active")
+		getNav.classList.add("nav__avtive")
+		}
+		else{
+			getInput.classList.remove("sroll__active")
+		getNav.classList.remove("nav__avtive")
+		}
+	}
+</script>
+</html>
